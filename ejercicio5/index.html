@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper blue-grey">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../ejercicio1/index.html">Ejercicio 1</a></li>
+        <li><a href="../ejercicio2/index.html">Ejercicio 2</a></li>
+        <li><a href="../ejercicio3/index.html">Ejercicio 3</a></li>
+        <li><a href="../ejercicio4/index.html">Ejercicio 4</a></li>
+        <li class="active"><a href="../ejercicio5/index.html">Ejercicio 5</a></li>
+        <li><a href="../ejercicio6/index.html">Ejercicio 6</a></li>
+        <li><a href="../ejercicio7/index.html">Ejercicio 7</a></li>
+        <li><a href="../ejercicio8/index.html">Ejercicio 8</a></li>
+        <li><a href="../ejercicio9/index.html">Ejercicio 9</a></li>
+        <li><a href="../ejercicio10/index.html">Ejercicio 10</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--contenedor que contiene el programa-->
+  <main class="container">
+    <h3 class="center-align">Programa para saber que descuento dar en base al veh&iacute;culo escogido</h3>
+    <div class="row">
+      <div class="input-field col s6 push-l3">
+        <select id="getcardiscount">
+          <option value="ford" disabled selected>Escoge un veh&iacute;culo</option>
+          <option value="fiesta">Ford Fiesta 2023</option>
+          <option value="focus">Ford Focus 2023</option>
+          <option value="scape">Ford Scape 2023</option>
+        </select>
+        <label>Selecci&oacute;n de veh&iacute;culo</label>
+      </div>
+    </div>
+    <!--Contenedor para mostrar datos-->
+    <div class="row">
+      <div class="col s12 m7 push-l3">
+        <div class="card">
+          <div class="card-image" id="imgcontainer">
+            <img src="https://res.cloudinary.com/dbhtbf2uu/image/upload/v1700646255/actividad2_Kodigo/lrfnbojkzvbtejq4qftn.jpg" id="imgchange" alt="">
+          </div>
+          <div class="card-content blue-grey white-text">
+            <h3 id="spanuotput">Bienvenido a FORD</h3>
+            <p id="output">Hoy puedes ser acreedor de uno de nuestro modelos más recientes, elije entre los modelos, Ford Fiesta uno de nuestros
+              veh&iacute;culos más econ&oacute;micos, has rendir tu dinero al consumir menos combustible, Ford Focus, si eres aficionado a la 
+              velocidad y deportividad, el ford focus es tu mejor opci&oacute;n, obt&eacute;n una alta potencia con bajo consumo de combustible, y
+              si te gusta salir de la ciudad con familiares y amigos, conquistando terrenos, la Ford Escape es la indicada para t&iacute;,
+              est&aacute; demostrado que en potencia y bajo consumo no hay veh&iacute;culo que se le compare.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./JS/main.js"></script>
+</body>
+</html>

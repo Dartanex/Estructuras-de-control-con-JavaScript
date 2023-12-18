@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper blue-grey">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../ejercicio1/index.html">Ejercicio 1</a></li>
+        <li><a href="../ejercicio2/index.html">Ejercicio 2</a></li>
+        <li><a href="../ejercicio3/index.html">Ejercicio 3</a></li>
+        <li><a href="../ejercicio4/index.html">Ejercicio 4</a></li>
+        <li><a href="../ejercicio5/index.html">Ejercicio 5</a></li>
+        <li class="active"><a href="../ejercicio6/index.html">Ejercicio 6</a></li>
+        <li><a href="../ejercicio7/index.html">Ejercicio 7</a></li>
+        <li><a href="../ejercicio8/index.html">Ejercicio 8</a></li>
+        <li><a href="../ejercicio9/index.html">Ejercicio 9</a></li>
+        <li><a href="../ejercicio10/index.html">Ejercicio 10</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--contenedor que contiene el programa-->
+  <main>
+    <h1 class="center-align">Programa para calcular descuentos en viajes tur&iacute;sticos</h1>
+    <section class="container">
+      <div class="row">
+        <div class="input-field col s12 m6 push-l3">
+          <select id="departure" required>
+            <option value="" disabled selected>Esoger cidudad desde donde viajar&aacute;</option>
+            <option value="tecla">Santa Tecla</option>
+            <option value="sansalvador">San Salvador</option>
+            <option value="palma">La Palma</option>
+          </select>
+          <label>Ciduad de partida</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m6 push-l3">
+          <select id="destination" required>
+            <option value="" disabled selected>Escoger destino de viaje</option>
+            <option value="costasol">Costa del sol</option>
+            <option value="panchimalco">Panchimalco</option>
+            <option value="puertotriunfo">Puerto el Triunfo</option>
+          </select>
+          <label>Destino de viaje</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 push-l3">
+          <button class="btn blue-grey waves-effect" id="calculate" type="button">Calcular precio</button>
+        </div>
+      </div>
+    </section>
+    <!--Contenedor para mostrar datos-->
+    <section class="container">
+      <div class="row">
+        <div class="col s12 m6 push-l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="" id="imagechanger" alt="">
+            </div>
+            <div class="card-content blue-grey white-text">
+              <span class="card-title" id="cardtitle"></span>
+              <p id="outputone"></p>
+              <p id="outputtwo"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./JS/main.js"></script>
+</body>
+</html>

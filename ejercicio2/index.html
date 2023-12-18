@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <!--Menu de navegacion-->
+  <nav>
+    <div class="nav-wrapper blue-grey">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../ejercicio1/index.html">Ejercicio 1</a></li>
+        <li class="active"><a href="../ejercicio2/index.html">Ejercicio 2</a></li>
+        <li><a href="../ejercicio3/index.html">Ejercicio 3</a></li>
+        <li><a href="../ejercicio4/index.html">Ejercicio 4</a></li>
+        <li><a href="../ejercicio5/index.html">Ejercicio 5</a></li>
+        <li><a href="../ejercicio6/index.html">Ejercicio 6</a></li>
+        <li><a href="../ejercicio7/index.html">Ejercicio 7</a></li>
+        <li><a href="../ejercicio8/index.html">Ejercicio 8</a></li>
+        <li><a href="../ejercicio9/index.html">Ejercicio 9</a></li>
+        <li><a href="../ejercicio10/index.html">Ejercicio 10</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--Contenedor que contiene el programa-->
+  <main>
+    <h1 class="center-align">Programa para calcular datos de alumno</h1>
+    <div class="row">
+      <form class="col s12 m6 push-l3" action="" id="studentinfo">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="studentname" type="text" placeholder="Juan Estrada">
+            <label for="studentname">Ingrese nombre del estudiante</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="text" id="carnet" placeholder="A01">
+            <label for="carnet">Ingrese carnet del alumno</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="number" id="examgrade" min="0.00" max="10.00" step="any" placeholder="5.5">
+            <label for="examgrade">Ingrese nota de ex&aacute;men de alumno</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="number" id="homeworkgrade" min="0.00" max="10.00" step="any" placeholder="7.50">
+            <label for="homeworkgrade">Ingrese nota de tarea del alumno</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="number" id="attendance" min="0" max="20" placeholder="10 días de 20">
+            <label for="attendance">Ingrese cantidad de días asistidos (max 20)</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="number" id="investigation" min="0.00" max="10.00" step="any" placeholder="9">
+            <label for="investigation">Ingresar nota de investigaci&oacute;n</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <button class="btn waves-effect blue-grey" id="processdata" type="submit">Calcular nota final</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--Seccion para mostrar los datos en una pequeña tabla-->
+    <section class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3 class="center-align">Datos procesados del alumno</h3>
+        </div>
+        <div class="col s12">
+          <table>
+            <thead>
+              <tr>
+                  <th>Carnet</th>
+                  <th>Alumno</th>
+                  <th>Nota final</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr>
+                <td id="showstudentid"></td>
+                <td id="showname"></td>
+                <td id="showfinalgrade"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./JS/main.js"></script>
+</body>
+</html>

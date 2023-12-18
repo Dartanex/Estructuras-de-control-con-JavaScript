@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper blue-grey">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../ejercicio1/index.html">Ejercicio 1</a></li>
+        <li><a href="../ejercicio2/index.html">Ejercicio 2</a></li>
+        <li class="active"><a href="../ejercicio3/index.html">Ejercicio 3</a></li>
+        <li><a href="../ejercicio4/index.html">Ejercicio 4</a></li>
+        <li><a href="../ejercicio5/index.html">Ejercicio 5</a></li>
+        <li><a href="../ejercicio6/index.html">Ejercicio 6</a></li>
+        <li><a href="../ejercicio7/index.html">Ejercicio 7</a></li>
+        <li><a href="../ejercicio8/index.html">Ejercicio 8</a></li>
+        <li><a href="../ejercicio9/index.html">Ejercicio 9</a></li>
+        <li><a href="../ejercicio10/index.html">Ejercicio 10</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <h1 class="center-align">Programa para calcular el aumento salarial de un empleado</h1>
+    <div class="row">
+      <form class="col s12 m6 push-l3" action="" id="employeerise">
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Josue Perez" id="fullname" type="text" class="validate" required>
+            <label for="fullname">Nombre de empleado</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="salary" type="number" class="validate" step="any" required>
+            <label for="salary">Salario de empleado</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s10">
+            <p class="col s3">
+              <label>
+                <input name="category" type="radio" value="15" onclick="getCategory()"/>
+                <span>Categor&iacute;a A</span>
+              </label>
+            </p>
+            <p class="col s3">
+              <label>
+                <input name="category" type="radio" value="30" onclick="getCategory()"/>
+                <span>Categor&iacute;a B</span>
+              </label>
+            </p>
+            <p class="col s3">
+              <label>
+                <input class="with-gap" name="category" type="radio" value="10" onclick="getCategory()"/>
+                <span>Categor&iacute;a C</span>
+              </label>
+            </p>
+            <p class="col s3">
+              <label>
+                <input name="category" type="radio" value="20" onclick="getCategory()"/>
+                <span>Categor&iacute;a D</span>
+              </label>
+            </p>
+            <p class="red-text text-darken-2">De click en una de las opciones para ver el porcentaje de aumento</p>
+          </div>
+          <div class="input-field col s2">
+            <input id="showrisepercent" type="text" class="validate" value="Aumento%" readonly>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <button class="btn waves-effect blue-grey" id="calculateraise" type="submit">Calcular aumento</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--Seccion para mostrar los datos en una tabla-->
+    <section class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3 class="center-align">Datos procesados de aumento de salario</h3>
+        </div>
+        <div class="col s12">
+          <table>
+            <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Salario</th>
+                  <th>Aumento</th>
+                  <th>Saliro con Aumento</th>
+              </tr>
+            </thead>
+    
+            <tbody id="showdata">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./JS/main.js"></script>
+</body>
+</html>
